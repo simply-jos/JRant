@@ -1,4 +1,3 @@
-package com.jrant;
 
 import java.io.File;
 import java.sql.Time;
