@@ -66,24 +66,4 @@ public class JRant {
 
 		return markup;
 	}
-
-	public static void main(String[] args){
-		JRant rant = new JRant("vocab", true);
-		Scanner input = new Scanner(System.in);
-		
-		String text = "";
-		while (true){
-			text = input.nextLine();
-			
-			//System.out.println(LocalTime.now().toString());
-			if (text.equals("#nsfw")){
-				rant.setFilter(false);
-			}
-			else if (text.equals("#sfw")) {
-				rant.setFilter(true);
-			}
-			System.out.println(rant.parse(text));
-			//System.out.println(LocalTime.now().toString());
-		}
-	}
 }
