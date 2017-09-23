@@ -11,7 +11,7 @@ import java.util.Random;
  * @author Codypeterson
  *
  */
-public class Querry {
+public class Query {
 	private File dir;
 	private ArrayList<Map<String, String[]>> vocabLists = new ArrayList<Map<String, String[]>>();;
 
@@ -20,7 +20,7 @@ public class Querry {
 
 	private boolean nsfwFilter;
 
-	public Querry(String directory, boolean filter){
+	public Query(String directory, boolean filter){
 		try {
 			dir = new File(directory);
 			if (!dir.isDirectory()){
@@ -34,7 +34,7 @@ public class Querry {
 		}
 	}
 
-	public Querry(File directory, boolean filter){
+	public Query(File directory, boolean filter){
 		if (!directory.isDirectory()){
 
 		}

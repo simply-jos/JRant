@@ -4,14 +4,14 @@ import java.util.regex.Pattern;
 
 public class JRant {
 	private static Random rand = new Random();
-	private Querry q;
+	private Query q;
 
 	public JRant(String dir, boolean filter){
-		q = new Querry(dir, filter);
+		q = new Query(dir, filter);
 	}
 
 	public JRant(File dir, boolean filter){
-		q = new Querry(dir, filter);
+		q = new Query(dir, filter);
 	}
 
 	public void setFilter(boolean on){ q.setFilter(on); }
